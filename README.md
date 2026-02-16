@@ -1,4 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Bookmark App
+
+A modern bookmark manager built with Next.js, Supabase, and Tailwind CSS.
+
+## Features
+
+✅ Google OAuth Authentication  
+✅ Private Bookmarks  
+✅ Real-time Updates (Supabase Realtime)  
+✅ Easy Management  
+
+## Tech Stack
+
+- Next.js 16+ (App Router)
+- Supabase (Auth, Database, Realtime)
+- Tailwind CSS
+- Vercel Deployment
+
+## Problems & Solutions
+
+### 1. Component Props Mismatch
+Fixed by creating proper component implementations with correct TypeScript types.
+
+### 2. React Hook Warnings
+Moved `fetchBookmarks()` inside useEffect and fixed dependency array.
+
+### 3. Real-time Updates
+Implemented Supabase Realtime subscriptions with PostgreSQL change listeners.
+
+### 4. Google OAuth
+Created OAuth callback handler at `/app/auth/callback/route.ts`.
+
+### 5. Bookmark Privacy
+Implemented RLS policies to restrict access to own bookmarks only.
+
+### 6. Port Conflicts
+Killed existing Node processes and removed `.next/dev/lock`.
+
+### 7. OAuth Callback
+Created proper handler to exchange auth code for session.
 
 ## Getting Started
 
