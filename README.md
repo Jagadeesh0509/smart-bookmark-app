@@ -1,5 +1,10 @@
 # Smart Bookmark App
 
+### LIVE ###
+
+https://smart-bookmark-app-lac-psi.vercel.app/
+
+
 A modern bookmark manager built with Next.js, Supabase, and Tailwind CSS.
 
 ## Features
